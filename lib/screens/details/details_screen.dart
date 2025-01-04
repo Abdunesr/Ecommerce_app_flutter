@@ -66,7 +66,6 @@ class DetailsScreen extends StatelessWidget {
                     ),
                     child: Column(
                       children: <Widget>[
-                        ColorAndSize(product: product),
                         const SizedBox(height: kDefaultPaddin / 2),
                         Description(product: product),
                         const SizedBox(height: kDefaultPaddin / 2),
