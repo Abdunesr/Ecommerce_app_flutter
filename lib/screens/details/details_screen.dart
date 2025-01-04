@@ -4,8 +4,7 @@ import 'package:flutter_svg/svg.dart';
 import '../../constants.dart';
 import '../../models/product.dart';
 import 'components/add_to_cart.dart';
-import 'components/color_and_size.dart';
-import 'components/counter_with_fav_btn.dart';
+
 import 'components/description.dart';
 import 'components/product_title_with_image.dart';
 
@@ -69,7 +68,6 @@ class DetailsScreen extends StatelessWidget {
                         const SizedBox(height: kDefaultPaddin / 2),
                         Description(product: product),
                         const SizedBox(height: kDefaultPaddin / 2),
-                        const CounterWithFavBtn(),
                         const SizedBox(height: kDefaultPaddin / 2),
                         AddToCart(product: product)
                       ],
