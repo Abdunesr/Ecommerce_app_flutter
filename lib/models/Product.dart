@@ -16,29 +16,39 @@ class Product {
 }
 
 List<Product> products = [
-  Product(
+  /* Product(
       id: 1,
       title: "Office Code",
       price: 234,
       size: 12,
       description: dummyText,
       image: "assets/images/bag_1.png",
-      color: const Color(0xFF3D82AE)),
+      color: const Color(0xFF3D82AE)), */
   Product(
-      id: 2,
-      title: "Belt Bag",
-      price: 234,
-      size: 8,
-      description: dummyText,
-      image: "assets/images/bag_2.png",
-      color: const Color(0xFFD3A984)),
+    id: 6,
+    title: "jacket lether",
+    price: 234,
+    size: 12,
+    description: dummyText,
+    image: "assets/images/jacket.jpg",
+    color: const Color.fromARGB(255, 0, 0, 0),
+  ),
+  Product(
+    id: 6,
+    title: "Office Code",
+    price: 234,
+    size: 12,
+    description: dummyText,
+    image: "assets/images/bag_6.png",
+    color: const Color(0xFFAEAEAE),
+  ),
   Product(
       id: 3,
       title: "Hang Top",
       price: 234,
       size: 10,
       description: dummyText,
-      image: "assets/images/bag_3.png",
+      image: "assets/images/trouser2.jpg",
       color: const Color(0xFF989493)),
   Product(
       id: 4,
@@ -65,7 +75,16 @@ List<Product> products = [
     image: "assets/images/bag_6.png",
     color: const Color(0xFFAEAEAE),
   ),
+  Product(
+    id: 6,
+    title: "Tshirt ",
+    price: 50,
+    size: 12,
+    description: dummyText,
+    image: "assets/images/swetter.jpg",
+    color: const Color.fromARGB(255, 255, 30, 30),
+  ),
 ];
 
 String dummyText =
-    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since. When an unknown printer took a galley.";
+    "ጫማዎች የእግር መሣሪያዎች ናቸው።ነሱ በተለያዩ እቅፎች እና የቀለም ይታወቃሉ።ጫማዎች በተለያዩ ዕድሜዎች የሚገኙ እና በዕድሜ ላይ ይሰሩ ይሆናሉ።";

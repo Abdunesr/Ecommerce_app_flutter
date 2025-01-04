@@ -13,13 +13,13 @@ class Categories extends StatefulWidget {
 
 class _CategoriesState extends State<Categories> {
   List<String> categories = [
-    " clothes",
-    "Watches",
-    "Shoes",
-    "Dresses",
-    "Bags",
-    "pcs",
-    "Accessories"
+    "ልብስ", // Clothes
+    "ሰዐት", // Watches
+    "ጫማዎች", // Shoes
+    "ልብስ", // Dresses
+    "ገንቢዎች", // Bags
+    "ኮምፒውተር", // Pcs (could be interpreted as items)
+    "እቃዎች" // Accessories
   ];
   // By default our first item will be selected
   int selectedIndex = 0;
