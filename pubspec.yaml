@@ -29,6 +29,7 @@ dependencies:
   cupertino_icons: ^1.0.8
   flutter_svg: ^2.0.10 # it help us to use SVG in our app
   provider: ^6.1.2
+  awesome_snackbar_content: ^0.1.4
 
 dev_dependencies:
   flutter_lints: ^4.0.0
