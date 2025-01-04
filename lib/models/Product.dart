@@ -25,7 +25,7 @@ List<Product> products = [
       image: "assets/images/bag_1.png",
       color: const Color(0xFF3D82AE)), */
   Product(
-    id: 6,
+    id: 9,
     title: "jacket lether",
     price: 234,
     size: 12,
@@ -34,7 +34,7 @@ List<Product> products = [
     color: const Color.fromARGB(255, 0, 0, 0),
   ),
   Product(
-    id: 6,
+    id: 7,
     title: "Office Code",
     price: 234,
     size: 12,
@@ -67,7 +67,7 @@ List<Product> products = [
       image: "assets/images/bag_5.png",
       color: const Color(0xFFFB7883)),
   Product(
-    id: 6,
+    id: 8,
     title: "Office Code",
     price: 234,
     size: 12,

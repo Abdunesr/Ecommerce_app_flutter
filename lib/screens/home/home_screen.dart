@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:providers/screens/home/CartScreen.dart';
 import '../../constants.dart';
 import '../../models/product.dart';
-import '../details/details_screen.dart';
+import '../../widgets/details_screen.dart';
 import 'components/categorries.dart';
 import 'components/item_card.dart';
 
@@ -40,7 +41,12 @@ class HomeScreen extends StatelessWidget {
               "assets/icons/cart.svg",
               colorFilter: const ColorFilter.mode(kTextColor, BlendMode.srcIn),
             ),
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const CartScreen()),
+              );
+            },
           ),
           const SizedBox(width: kDefaultPaddin / 2),
         ],
