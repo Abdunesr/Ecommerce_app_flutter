@@ -46,54 +46,57 @@ class HomeScreen extends StatelessWidget {
         ],
       ),
       drawer: Drawer(
-        child: Column(
-          children: <Widget>[
-            // Header of the Drawer with 'NAF' title
-            const DrawerHeader(
-              decoration: BoxDecoration(
-                color: Colors.amberAccent,
-              ),
-              child: Center(
-                child: Text(
-                  'NAF',
-                  style: TextStyle(
-                    fontSize: 30,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.white,
+        child: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Column(
+            children: <Widget>[
+              // Header of the Drawer with 'NAF' title
+              const DrawerHeader(
+                decoration: BoxDecoration(
+                  color: Color.fromARGB(178, 217, 217, 215),
+                ),
+                child: Center(
+                  child: Text(
+                    'NAF',
+                    style: TextStyle(
+                      fontSize: 30,
+                      fontWeight: FontWeight.bold,
+                      color: Color.fromARGB(175, 65, 63, 63),
+                    ),
                   ),
                 ),
               ),
-            ),
-            // List of Drawer Items
-            ListTile(
-              title: const Text("Home"),
-              leading: const Icon(Icons.home),
-              onTap: () {
-                Navigator.pop(context); // Close the drawer
-              },
-            ),
-            ListTile(
-              title: const Text("Shop"),
-              leading: const Icon(Icons.store),
-              onTap: () {
-                Navigator.pop(context); // Close the drawer
-              },
-            ),
-            ListTile(
-              title: const Text("Settings"),
-              leading: const Icon(Icons.settings),
-              onTap: () {
-                Navigator.pop(context); // Close the drawer
-              },
-            ),
-            ListTile(
-              title: const Text("Lists"),
-              leading: const Icon(Icons.list),
-              onTap: () {
-                Navigator.pop(context); // Close the drawer
-              },
-            ),
-          ],
+              // List of Drawer Items
+              ListTile(
+                title: const Text("Home"),
+                leading: const Icon(Icons.home),
+                onTap: () {
+                  Navigator.pop(context); // Close the drawer
+                },
+              ),
+              ListTile(
+                title: const Text("Shop"),
+                leading: const Icon(Icons.store),
+                onTap: () {
+                  Navigator.pop(context); // Close the drawer
+                },
+              ),
+              ListTile(
+                title: const Text("Settings"),
+                leading: const Icon(Icons.settings),
+                onTap: () {
+                  Navigator.pop(context); // Close the drawer
+                },
+              ),
+              ListTile(
+                title: const Text("Lists"),
+                leading: const Icon(Icons.list),
+                onTap: () {
+                  Navigator.pop(context); // Close the drawer
+                },
+              ),
+            ],
+          ),
         ),
       ),
       body: Column(
