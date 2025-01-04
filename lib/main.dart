@@ -1,10 +1,19 @@
 import 'package:flutter/material.dart';
 import 'constants.dart'; // Import for constants like kTextColor
-import 'screens/home/home_screen.dart'; // Import for the HomeScreen widget
+import 'screens/home/home_screen.dart';
+import 'package:provider/provider.dart';
+import 'package:providers/Providers/CartProvider.dart';
 
 // The entry point of the application
 void main() {
-  runApp(const MyApp()); // Runs the app by calling MyApp as the root widget
+  runApp(
+    MultiProvider(
+      providers: [
+        ChangeNotifierProvider(create: (_) => CartProvider()),
+      ],
+      child: const MyApp(),
+    ),
+  ); // Runs the app by calling MyApp as the root widget
 }
 
 // The main app widget

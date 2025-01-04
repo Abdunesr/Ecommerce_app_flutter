@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-
-import '../../../constants.dart';
-import '../../../models/product.dart';
+import '../constants.dart';
+import '../models/product.dart';
+import 'package:provider/provider.dart';
+import 'package:providers/Providers/CartProvider.dart';
 
 class AddToCart extends StatelessWidget {
   const AddToCart({super.key, required this.product});
@@ -29,7 +30,13 @@ class AddToCart extends StatelessWidget {
                 "assets/icons/add_to_cart.svg",
                 colorFilter: ColorFilter.mode(product.color, BlendMode.srcIn),
               ),
-              onPressed: () {},
+              onPressed: () {
+                Provider.of<CartProvider>(context, listen: false)
+                    .addToCart(product);
+                ScaffoldMessenger.of(context).showSnackBar(
+                  SnackBar(content: Text('${product.title} added to cart')),
+                );
+              },
             ),
           ),
           Expanded(
