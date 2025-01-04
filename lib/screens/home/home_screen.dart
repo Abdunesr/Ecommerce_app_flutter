@@ -31,13 +31,6 @@ class HomeScreen extends StatelessWidget {
         actions: <Widget>[
           IconButton(
             icon: SvgPicture.asset(
-              "assets/icons/search.svg",
-              colorFilter: const ColorFilter.mode(kTextColor, BlendMode.srcIn),
-            ),
-            onPressed: () {},
-          ),
-          IconButton(
-            icon: SvgPicture.asset(
               "assets/icons/cart.svg",
               colorFilter: const ColorFilter.mode(kTextColor, BlendMode.srcIn),
             ),

@@ -4,6 +4,7 @@ import '../constants.dart';
 import '../models/product.dart';
 import 'package:provider/provider.dart';
 import 'package:providers/Providers/CartProvider.dart';
+import 'package:awesome_snackbar_content/awesome_snackbar_content.dart';
 
 class AddToCart extends StatelessWidget {
   const AddToCart({super.key, required this.product});
@@ -33,9 +34,21 @@ class AddToCart extends StatelessWidget {
               onPressed: () {
                 Provider.of<CartProvider>(context, listen: false)
                     .addToCart(product);
-                ScaffoldMessenger.of(context).showSnackBar(
-                  SnackBar(content: Text('${product.title} added to cart')),
+                final snackBar = SnackBar(
+                  elevation: 0,
+                  behavior: SnackBarBehavior.floating,
+                  backgroundColor: Colors.transparent,
+                  content: AwesomeSnackbarContent(
+                    title: 'On Snap!',
+                    message: '${product.title} has been added to your cart.',
+
+                    /// change contentType to ContentType.success, ContentType.warning or ContentType.help for variants
+                    contentType: ContentType.success,
+                  ),
                 );
+                ScaffoldMessenger.of(context)
+                  ..hideCurrentSnackBar()
+                  ..showSnackBar(snackBar);
               },
             ),
           ),
