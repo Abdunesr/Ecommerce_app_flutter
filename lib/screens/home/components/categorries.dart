@@ -57,13 +57,16 @@ class _CategoriesState extends State<Categories> {
                 color: selectedIndex == index ? kTextColor : kTextLightColor,
               ),
             ),
-            Container(
-              margin: const EdgeInsets.only(
-                top: kDefaultPaddin / 8,
-              ), //top padding 5
-              height: 2,
-              width: 30,
-              color: selectedIndex == index ? Colors.black : Colors.transparent,
+            Expanded(
+              child: Container(
+                margin: const EdgeInsets.only(
+                  top: kDefaultPaddin / 8,
+                ), //top padding 5
+                height: 2,
+                width: 30,
+                color:
+                    selectedIndex == index ? Colors.black : Colors.transparent,
+              ),
             )
           ],
         ),
