@@ -1,4 +1,4 @@
-import 'package:firebase_auth/firebase_auth.dart';
+/* import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
 class AuthProvider extends ChangeNotifier {
@@ -45,3 +45,4 @@ class AuthProvider extends ChangeNotifier {
     await _auth.signOut();
   }
 }
+ */
