@@ -1,5 +1,6 @@
 import 'package:awesome_snackbar_content/awesome_snackbar_content.dart';
 import 'package:flutter/material.dart';
+import 'package:providers/Providers/AuthProvider.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -12,6 +13,7 @@ class _LoginScreenState extends State<LoginScreen> {
   final _formKey = GlobalKey<FormState>();
   final TextEditingController _emailController = TextEditingController();
   final TextEditingController _passwordController = TextEditingController();
+  final AuthProvider _auth = AuthProvider();
 
   @override
   Widget build(BuildContext context) {
@@ -42,7 +44,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     crossAxisAlignment: CrossAxisAlignment.stretch,
                     children: [
                       // Logo
-                      CircleAvatar(
+                      const CircleAvatar(
                         radius: 50,
                         backgroundColor: Colors.white,
                         child: Icon(
@@ -52,7 +54,19 @@ class _LoginScreenState extends State<LoginScreen> {
                         ),
                       ),
                       const SizedBox(height: 20),
-                      // Title
+                      TextButton(
+                        onPressed: () async {
+                          dynamic result = await _auth.signInAnon();
+                          if (result == null) {
+                            print('Error signing in');
+                            print(result);
+                          } else {
+                            print('Signed in');
+                            print(result.uid);
+                          }
+                        },
+                        child: const Text("Sign in Anonymously"),
+                      ),
                       const Text(
                         "Welcome Back!",
                         textAlign: TextAlign.center,

@@ -28,7 +28,7 @@ List<Product> products = [
     id: 9,
     title: "jacket lether",
     price: 234,
-    size: 12,
+    size: 12, //stock
     description: dummyText,
     image: "assets/images/jacket.jpg",
     color: const Color.fromARGB(255, 0, 0, 0),
