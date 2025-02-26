@@ -1,6 +1,6 @@
 # Flutter E-Commerce App
 
-![App Screenshot](https://via.placeholder.com/1200x600.png?text=E-Commerce+App+Demo)  
+![App Screenshot](https://i.pinimg.com/736x/36/6d/31/366d3172e6c6a45562314c36af03674a.jpg)  
 *Replace this placeholder image with a screenshot of your app.*
 
 A fully functional and modern e-commerce app built with **Flutter**. This app provides a seamless shopping experience with features like product browsing, cart management, user authentication, and more. Designed to be cross-platform, it works on Android, iOS, and web.
@@ -22,9 +22,7 @@ A fully functional and modern e-commerce app built with **Flutter**. This app pr
 
 ## Screenshots
 
-| Home Screen | Product Details | Cart | Profile |
-|-------------|-----------------|------|---------|
-| ![Home](https://via.placeholder.com/300x600.png?text=Home+Screen) | ![Product](https://via.placeholder.com/300x600.png?text=Product+Details) | ![Cart](https://via.placeholder.com/300x600.png?text=Cart) | ![Profile](https://via.placeholder.com/300x600.png?text=Profile) |
+
 
 *Replace the placeholder images with actual screenshots of your app.*
 
